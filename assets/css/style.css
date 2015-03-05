@@ -3167,10 +3167,21 @@ body.lightbox_open {
         margin-left: auto;
         margin-right: auto; } }
 
+@media screen and (max-width: 767px) {
+  .page {
+    padding-bottom: 0; }
+
+  .wrapper {
+    padding-left: 38px;
+    padding-bottom: 0; } }
+@media screen and (max-width: 480px) {
+  .wrapper {
+    padding-left: 6px;
+    padding-bottom: 0; } }
 .donate-side {
   position: relative;
   overflow: hidden; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 480px) {
     .donate-side {
       padding-bottom: 0; } }
   @media screen and (max-width: 480px) {
@@ -3195,6 +3206,15 @@ body.lightbox_open {
       .donate-side .main-donate-info .right_column {
         background-color: #EEEEEE; } }
 
+@media screen and (max-width: 480px) {
+  .align-left-320 {
+    text-align: left !important; } }
+h3 {
+  text-align: left !important; }
+  @media screen and (max-width: 468px) {
+    h3 {
+      text-align: center !important; } }
+
 .hr-donate {
   border-width: 2px;
   border-color: #EEEEEE; }
@@ -3202,7 +3222,16 @@ body.lightbox_open {
 h3.padding-special-quote {
   padding: 0 0 0 28px;
   marging: 0; }
+  h3.padding-special-quote h3.padding-special-quote {
+    padding: 0 0 0 32px;
+    marging: 0; }
 
+@media screen and (max-width: 468px) {
+  h3 {
+    padding-bottom: 12px; }
+
+  h3.padding-special-quote {
+    padding: 0 20px 20px 28px; } }
 span.quote-normal:after {
   position: relative;
   float: right;
@@ -3216,6 +3245,16 @@ span.quote-normal:before {
   top: 8px;
   content: url(../img/quote-icon.png); }
 
+@media screen and (max-width: 767px) {
+  span.quote-normal:after {
+    right: 314px; } }
+@media screen and (max-width: 480px) {
+  span.quote-normal:after {
+    top: -52px;
+    right: 14px; } }
+@media screen and (max-width: 767px) {
+  span.quote-normal:before {
+    left: 0px; } }
 .padding-special-legend {
   padding-left: 28px; }
 
@@ -3240,9 +3279,20 @@ span.quote-normal:before {
       height: 14px;
       background-position: -350px -640px;
       content: ""; }
+  @media screen and (max-width: 480px) {
+    .main-donate-info ul li {
+      font-family: "Source Sans Pro", sans-serif;
+      padding-left: 26px;
+      padding-right: 0px; } }
 
+@media screen and (max-width: 767px) {
+  .img-responsive {
+    margin-left: 0 !important; } }
 .bodytext2, .page .container .bodytext2 {
   padding-right: 18px; }
+  @media screen and (max-width: 480px) {
+    .bodytext2, .page .container .bodytext2 {
+      padding-right: 0; } }
 
 .text-size-special {
   font-size: 1.22em !important; }
@@ -3257,18 +3307,37 @@ span.quote-normal:before {
 
 .padding-top-amazon-smile {
   padding-top: 12px; }
+  @media screen and (max-width: 767px) {
+    .padding-top-amazon-smile {
+      padding-top: 0px; } }
+  @media screen and (max-width: 480px) {
+    .padding-top-amazon-smile {
+      padding-top: 12px; } }
 
 .padding-top-left-info {
   padding-top: 14px; }
 
 .padding-left-info {
   padding-left: 40px; }
+  @media screen and (max-width: 767px) {
+    .padding-left-info {
+      padding-left: 50px; } }
+  @media screen and (max-width: 480px) {
+    .padding-left-info {
+      padding-left: 20px; } }
 
 .padding-right-info {
   padding-right: 50px !important; }
+  @media screen and (max-width: 480px) {
+    .padding-right-info {
+      padding-right: 18px !important; } }
 
 .padding-top-info {
   padding-top: 7px; }
+  @media screen and (max-width: 767px) {
+    .padding-top-info {
+      padding-top: 40px;
+      padding-bottom: 34px; } }
 
 .text-blue {
   color: #263752; }
@@ -3655,5 +3724,3 @@ span.quote-normal:before {
   background-color: #263752;
   color: #fff;
   padding: 54px 0 64px; }
-
-/*# sourceMappingURL=style.css.map */
