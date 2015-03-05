@@ -156,6 +156,8 @@ function compile()
 	{
 		$posted = true;
 		$file = $_REQUEST['file'];
+	}else{
+		echo 'Compilando.<script>document.getElementsByTagName(\'form\')[0].submit();</script>';
 	}
 
 	if( $posted )
@@ -165,11 +167,30 @@ function compile()
 
 }
 
+
+function clean_chars($string){
+	$string= str_replace("“", "&ldquo;", $string);
+	$string= str_replace("”", "&rdquo;", $string);
+	$string= str_replace("„", "&bdquo;", $string);
+	$string= str_replace("‘", "&lsquo;", $string);
+	$string= str_replace("’", "&rsquo;", $string);
+	$string= str_replace("‚", "&sbquo;", $string);
+
+	return $string;
+}
+
+
 function createFile($file="", $uri="")
 {
+
+	if( !is_dir("compile/") ){
+		mkdir("compile");
+	}
+
 	$uri = empty($uri) ? "index" : $uri;
 	$myfile = fopen("compile/". $uri . '.html', "w") or die("Unable to open file!");
 	$file = str_replace('&lt;/textarea&gt;', '</textarea>', $file);
+	$file = clean_chars($file);
 	$file=utf8_encode($file);
 	$file="\xEF\xBB\xBF".$file;
 	$txt = $file;
