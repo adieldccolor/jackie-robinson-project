@@ -1,0 +1,44 @@
+<div class="page internal-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8">
+				<h3 class="zero-top">Program Description</h3>
+				<p>
+					The Jackie Robinson Foundation provides a multi-faceted experience designed to not only address the financial needs of minority students who aspire to attend college but also to guide them through the process of higher education.
+				</p>
+				<p class="zero-bottom">
+					<a href="apply.programs" class="button-primary zero-center zero-bottom">Learn More</a>
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<div class="line-h hidden-xs line-left"></div>
+				<h4 class="zero-top">Become a JRF Scholar</h4>
+				<p class="bodytext2 apply-dates-heading">Application live:</p>
+				<h5 class="zero-top subheader">November 1, 2014</h5>
+				
+				<p class="bodytext2 apply-dates-heading">Application deadline:</p>
+				<h5 class="zero-top subheader">February 15, 2015</h5>
+
+				<p>
+					<a href="#" class="link3 useIcon"><i class="icon pdfDocIcon"></i> <span>PREVIEW JRF APPLICATION</span></a>
+				</p>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{{ view('homepage/internal-image', ['page' => $page, "image" => "assets/img/headers/bg-apply.jpg", "title" => "Applicants", "text" => "FPO. View the required components of the Jackie Robinson Foundation<br> application. Lorem ipsum dolor sit amet."]) }}
+{{ view('homepage/colored-column', ['page' => $page, 
+	"column1" => ["title" => "Application FAQs", 
+	"text" => '<ul>
+		<li><a href="#">When is the application due?</a></li>
+		<li><a href="#">Do I have to be a high school senior?</a></li>
+		<li><a href="#">Where do I send my application?</a></li>
+		</ul>
+		<p><a href="#" class="button-primary">View All</a></p>'], 
+
+	"column2" => ["title" => "Additional Resources", 
+	"text" => '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<p>
+	<p><a href="#" class="btn-timeline">View All</a></p>']]) }}

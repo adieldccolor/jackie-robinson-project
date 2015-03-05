@@ -1,0 +1,17 @@
+@{{ if($ajax): }}@
+
+@{{ $data = ["success" => "ajax example"]; }}@
+{{ Route::json($data) }}
+
+@{{ else: }}@
+
+{{ view('homepage/navigation') }}
+{{ view('homepage/slider-hero') }}
+{{ view('homepage/impact') }}
+{{ view('homepage/programs') }}
+{{ view('homepage/history') }}
+{{ view('homepage/social') }}
+{{ view('homepage/social-newsletter') }}
+{{ view('homepage/footer-menu') }}
+
+@{{ endif; }}@

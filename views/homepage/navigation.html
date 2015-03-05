@@ -1,0 +1,119 @@
+<!-- Fixed navbar -->
+    <nav class="navbar navbar-fixed-top menuTop">
+      <div class="row">
+        <div class="navbar-header">
+
+
+          <a class="navbar-brand logo" href="{{ env_url('./') }}"><img src="assets/img/logo.jpg"></a>
+         
+          <div class="pull-right pull-btn">
+            <a class="search-trigger-btn"><i class="icon searchIcon"></i></a>
+            <button class="navbar-btn open-navbar">
+              <i class="icon menuIcon"></i>
+            </button>
+          </div>
+        </div>
+        <div id="navbar">
+          <div class="navbar-header-mobile visible-xs">
+            <div class="row">
+              <div class="col-xs-6">
+                <button class="navbar-btn close-navbar close-trigger">
+                  <i class="icon menuIcon"></i>
+                </button>
+              </div>
+              <div class="col-xs-6 text-right">
+                <button class="navbar-btn close-btn close-navbar">
+                  <span class="icon-close"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right hidden-xs">
+            <li {{ active_class("jrf-connect") }}><a href="{{ env_url('jrf-connect') }}">JRF CONNECT</a></li>
+            <li {{ active_class("search") }}><a href="{{ env_url('search') }}" class="search-button">SEARCH</a></li>
+            <li style="margin-top: 4px"><button class="btn-donate" onclick="window.location='{{ env_url('donate') }}'">DONATE</button></li>
+          </ul>
+          <ul class="nav navbar-nav main-menu">
+            <li {{ active_class("impact mission programs impact conference") }}><a href="{{ env_url('impact') }}">Our Impact <span class="collapse-icon"></span></a>
+              <ul>
+                <div class="container">
+                  <li><a href="{{ env_url('mission') }}">mission</a></li>
+                  <li><a href="{{ env_url('programs') }}">programs</a></li>
+                  <li><a href="{{ env_url('impact') }}">impact</a></li>
+                  <li><a href="{{ env_url('conference') }}">conference</a></li>
+                </div>
+              </ul>
+            </li>
+            <li {{ active_class("about-us scholars alumni board-of-directors staff sponsors support-network museum finacial-reports scholars.bio") }}><a href="{{ env_url('about-us') }}">About Us <span class="collapse-icon"></span></a>
+              <ul>
+                <div class="container">
+                  <li {{ active_class("scholars scholars.bio") }}><a href="{{ env_url('scholars') }}">scholars</a></li>
+                  <li {{ active_class("alumni") }}><a href="{{ env_url('alumni') }}">alumni</a></li>
+                  <li {{ active_class("board-of-directors") }}><a href="{{ env_url('board-of-directors') }}">board of directors</a></li>
+                  <li {{ active_class("staff") }}><a href="{{ env_url('staff') }}">staff</a></li>
+                  <li {{ active_class("sponsors") }}><a href="{{ env_url('sponsors') }}">sponsors</a></li>
+                  <li {{ active_class("support-network") }}><a href="{{ env_url('support-network') }}">support network</a></li>
+                  <li {{ active_class("museum") }}><a href="{{ env_url('museum') }}">museum</a></li>
+                  <li {{ active_class("finacial-reports") }}><a href="{{ env_url('financial-reports') }}">finacial reports</a></li>
+                </div>
+              </ul>
+            </li>
+            <li {{ active_class("apply") }}><a href="{{ env_url('apply') }}">Apply <span class="collapse-icon"></span></a>
+                <ul>
+                  <div class="container">
+                    <li {{ active_class('apply.programs') }}><a href="{{ env_url('apply.programs') }}">programs</a></li>
+                    <li {{ active_class('applicants') }}><a href="{{ env_url('applicants') }}">applicants</a></li>
+                    <li {{ active_class('faqs') }}><a href="{{ env_url('faqs') }}">application faqs</a></li>
+                    <li {{ active_class('resources') }}><a href="{{ env_url('resources') }}">additional resources</a></li>
+                  </div>
+                </ul>
+            </li>              
+            <li {{ active_class("timeline") }}><a href="{{ env_url('timeline') }}">Timeline <span class="collapse-icon"></span></a></li>              
+            <li {{ active_class("support donate other-ways-to-give wards-dinner") }}><a href="{{ env_url('support') }}">Support <span class="collapse-icon"></span></a>
+               <ul>
+                <div class="container">
+                  <li {{ active_class("{{ env_url('donate') }}") }}><a href="donate">donate</a></li>
+                  <li {{ active_class("other-ways-to-give") }}><a href="{{ env_url('other-ways') }}">other ways to give</a></li>
+                  <li {{ active_class("awards-dinner") }}><a href="{{ env_url('awards-dinner') }}">awards dinner</a></li>
+                </div>
+              </ul>
+            </li>              
+            <li {{ active_class("blog") }}><a href="{{ env_url('blog') }}">Blog <span class="collapse-icon"></span></a></li>              
+            <li {{ active_class("gallery gallery.photos gallery.videos gallery.albums gallery.video") }}><a href="{{ env_url('gallery') }}">Gallery <span class="collapse-icon"></span></a>
+              <ul>
+                <div class="container">
+                  <li {{ active_class("gallery.photos gallery.albums") }}><a href="{{ env_url('gallery.albums') }}">photos</a></li>
+                  <li {{ active_class("gallery.videos gallery.video") }}><a href="{{ env_url('gallery.videos') }}">videos</a></li>
+                </div>
+              </ul>
+            </li>
+
+            <li {{ active_class("press press_post news media-kit contact-us","no-visible") }}>
+              <ul>
+                <div class="container">
+                  <li {{ active_class("press press_post") }}><a href="{{ env_url('press') }}">press</a></li>
+                  <li {{ active_class("news") }}><a href="{{ env_url('news') }}">news</a></li>
+                  <li {{ active_class("media-kit") }}><a href="{{ env_url('media-kit') }}">media kit</a></li>
+                  <li {{ active_class("contact-us") }}><a href="{{ env_url('contact-us') }}">contact us</a></li>
+                </div>
+              </ul>
+            </li>              
+          </ul>
+          <ul class="nav navbar-nav navbar-right visible-xs">
+            <li {{ active_class("jrf-connect") }}><a href="jrf-connect">JRF CONNECT</a></li>
+            <li style="margin-top: 4px"><button class="btn-donate">DONATE</button></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+        <div class="overlay"></div>
+      </div>
+      <div class="search-form">
+        <div class="container">
+          <form>
+            <button type="submit" class="search-submit"><i class="icon searchIcon inverted"></i><span>Search</span></button>
+            <input type="text" name="search" id="search" value="Type in search..." class="form-control search-input">
+            <div class="clearfix"></div>
+          </form>
+        </div>
+      </div>
+    </nav>

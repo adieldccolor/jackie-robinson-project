@@ -1,0 +1,26 @@
+@{{ if($ajax): }}@
+@{{ $data = ["error" => "Page missing."]; }}@
+{{ Route::json($data) }}
+@{{ else: }}@
+
+
+{{ view('homepage/navigation') }}
+<div class="page-wrapper error-page">
+
+<div class="text-container">
+	<div class="container">
+		<h1>Not Found, 404 Error</h1>
+		<p class="big">The page you are looking for has moved or no longer exists.</p>
+		<p class="small">Perhaps you can find what you are looking for by searching the sitemap.</p>
+		<p><a href="#" class="btn-timeline">View Sitemap</a></p>
+	</div>
+</div>
+
+<div class="img-container">
+	<img src="assets/img/headers/bg-404.jpg">
+</div>
+
+
+</div>
+
+@{{ endif; }}@

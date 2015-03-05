@@ -1,0 +1,16 @@
+@{{ if($ajax): }}@
+
+@{{ $data = ["success" => "ajax example"]; }}@
+{{ Route::json($data) }}
+
+@{{ else: }}@
+
+{{ view('homepage/navigation') }}
+<div class="page-wrapper">
+{{ view('homepage/header-image', ["page" => $page, 'header' => $header]) }}
+{{ view('page/' . $page, ["page" => $page, 'header' => $header, 'video' => (isset($video) ? $video : false)]) }}
+</div>
+{{ view('homepage/social-newsletter') }}
+{{ view('homepage/footer-menu') }}
+
+@{{ endif; }}@

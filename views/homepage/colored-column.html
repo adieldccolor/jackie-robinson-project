@@ -1,0 +1,27 @@
+@{{
+  $column1 = isset($column1) ? $column1 : ["title" => "Title 1", "text" => "<p>Lorem ipsum dolor sit amet 1.</p>"];
+  $column2 = isset($column1) ? $column2 : ["title" => "Title 2", "text" => "<p>Lorem ipsum dolor sit amet 2.</p>"];
+}}@
+
+
+<div class="colored-column">
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12 left_column">
+          <div class="wrapper">
+            <h3>{{$column1["title"]}}</h3>
+            {{$column1["text"]}}
+          </div>
+        </div>
+        <div class="col-sm-6 col-xs-12 right_column">
+          <div class="wrapper">
+
+            <h3>{{$column2["title"]}}</h3>
+            {{$column2["text"]}}
+          </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>

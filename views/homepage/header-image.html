@@ -1,0 +1,37 @@
+@{{ if($header): 
+
+$img = "img-header-apply.jpg";
+
+if($page == "about us"){
+	$img = "img-header-about-us.jpg";
+}
+
+if($page == "our impact"){
+	$img = "img-header-impact.jpg";
+}
+
+if($page == "support"){
+	$img = "img-header-support.jpg";
+}
+
+if($page == "gallery"){
+	$img = "img-header-gallery.jpg";
+}
+
+if($page == "timeline hola"){
+	$page = "Este es el timeline";
+	$img = "img-header-gallery.jpg";
+}
+
+
+
+
+}}@
+
+<div class="header-image">
+	<div class="container">
+		<h2>{{$page}}</h2>
+	</div>
+	<img src="assets/img/headers/{{$img}}" class="img-header">
+</div>
+@{{ endif; }}@

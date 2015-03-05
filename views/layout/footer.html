@@ -1,0 +1,48 @@
+@{{ if(!$ajax): }}@
+
+ <!-- core tasBkootstrap JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type='text/javascript' src="//platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/lemmon-slider.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/easing.js"></script>
+    <script src="assets/js/owl.carousel-1.min.js"></script>
+    <script src="assets/js/owl.carousel-2.min.js"></script>
+    <script src="assets/js/wurfl.js"></script>
+    <script src="assets/js/jquery.scrollmagic.js"></script>
+    <script src="assets/js/jquery.scrollmagic.debug.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script type='text/javascript'>//<![CDATA[ 
+    window.onload=function(){
+    twttr.events.bind('tweet', function (event) {
+          // Do something there
+          // alert('Tweeted');
+        });
+    }//]]>  
+    </script>
+
+
+  </body>
+</html>
+
+@{{ if($compile): }}@
+</textarea data-noreplace>
+<div class="btns" style="padding-top: 20px">
+    
+<input type="submit" value="Compilar pagina" style="position:fixed; bottom: 20px; left: 20px; padding: 20px; border: none; color: #fff; background: #94B933; z-index: 999999999999; cursor: pointer;">
+<a href="?" style="padding: 20px; border: none; color: #fff; background: #94B933;display:inline-block;font: 14px Arial;cursor: pointer;">Cancelar</a>
+
+</div>
+</form>
+</div>
+@{{
+    compile();
+}}@
+
+@{{ endif; }}@
+@{{ endif; }}@

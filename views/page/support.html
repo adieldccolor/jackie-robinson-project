@@ -1,0 +1,27 @@
+
+{{ view('homepage/colored-column', ['page' => $page, 
+	"column1" => ["title" => "Donate", 
+	"text" => '<p>By giving to us today, you will help ensure that the American dream lives on through the young people we serve. Learn more about how to donate.</p>
+		<p><a href="#" class="button-primary">Learn More</a></p>'], 
+
+	"column2" => ["title" => "Other Ways to Give", 
+	"text" => '<p>In addition to online donations, there are numerous other ways to support the Jackie Robinson Foundation.<p>
+	<p><a href="#" class="btn-timeline">Learn More</a></p>']]) }}
+
+<div class="page support-donate">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6 col-xs-12 left_column">
+			<img src="assets/img/awards-dinner.jpg" alt="" class="img-responsive img-block">
+		</div>
+		<div class="col-sm-6 col-xs-12 right_column add-padding-left-40 add-padding-top-40 ">
+			<h3>Annual Awards Dinner</h3>
+			<p>The Jackie Robinson Foundation will celebrate its Annual Awards Dinner on Monday, March 9, 2015 at New York’s venerable Waldorf Astoria hotel.</p>
+			<a href="#" class="button-primary zero-center">Learn More</a>
+		</div>
+	</div>
+</div>
+</div>
+
+
+{{ view('homepage/internal-image', ['page' => $page, "image" => "assets/img/headers/bg-museum.jpg", "title" => "Legacy Campaign - For the Jackie Robinson Museum", "text" => "See how the Jackie Robinson Museum will permanently preserve Jackie Robinson's rich legacy, inspire all ages, and enhance JRF's mission of education."]) }}

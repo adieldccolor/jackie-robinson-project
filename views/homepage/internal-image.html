@@ -1,0 +1,16 @@
+@{{ 
+	$img = isset($img) ? $image : "assets/img/headers/bg-museum.jpg"; 
+	$title = isset($title) ? $title : "Lorem"; 
+	$text = isset($text) ? $text : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, magnam, quis, excepturi odit placeat error accusamus maiores at a facere itaque corporis aliquam architecto magni aliquid obcaecati dolores dignissimos pariatur."; 
+	$button = isset($button) ? $button : ["#", "Learn More"]; 
+}}@
+<div class="internal-image" data-background="{{$image}}">
+	<div class="img-container">
+		<img src="{{$image}}">
+	</div>
+	<div class="container">
+		<h3 class="text-center">{{$title}}</h3>
+		<p>{{$text}}</p>
+		<p><a href="{{ $button[0] }}" class="btn-timeline">{{ $button[1] }}</a></p>
+	</div>
+</div>

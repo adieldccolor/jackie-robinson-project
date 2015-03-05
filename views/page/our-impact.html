@@ -1,0 +1,33 @@
+
+{{ view('homepage/colored-column', ['page' => $page, 
+	"column1" => ["title" => "Mission", 
+	"text" => '<p>The Jackie Robinson Foundation is a public, not-for-profit, national organization founded in 1973 as a vehicle to perpetuate the memory of Jackie Robinson and his heroic achievements. </p>
+		<p><a href="#" class="button-primary">Learn More</a></p>'], 
+
+	"column2" => ["title" => "Programs", 
+	"text" => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia ac dolorum vel laoreet.<p>
+	<p><a href="#" class="btn-timeline">View All</a></p>']]) }}
+
+
+<div class="page">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="img-wrapper">
+					<img src="assets/img/img-impact-65-million.gif" alt="" class="img-responsive img-block">
+				</div>
+			</div>
+			<div class="col-sm-8">
+				<h3>JRF's Impact</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia ac dolorum vel laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia ac dolorum vel laoreet.
+				</p>
+				<p>
+					<a href="#" class="button-primary zero-center">Learn More</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+{{ view('homepage/internal-image', ['page' => $page, "image" => "assets/img/headers/img-header-mlc-conference.jpg", "title" => "MLC Conference", "text" => "The Jackie Robinson Foundation’s annual Mentoring and Leadership Conference, held in New York City for all JRF Scholars."]) }}
