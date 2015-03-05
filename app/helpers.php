@@ -180,12 +180,59 @@ function clean_chars($string){
 }
 
 
+
+function xcopy($source, $dest, $permissions = 0755)
+{
+    // Check for symlinks
+    if (is_link($source)) {
+        return symlink(readlink($source), $dest);
+    }
+
+    // Simple copy for a file
+    if (is_file($source)) {
+        return copy($source, $dest);
+    }
+
+    // Make destination directory
+    if (!is_dir($dest)) {
+        mkdir($dest, $permissions);
+    }
+
+    // Loop through the folder
+    $dir = dir($source);
+    while (false !== $entry = $dir->read()) {
+        // Skip pointers
+        if ($entry == '.' || $entry == '..') {
+            continue;
+        }
+
+        // Deep copy directories
+        xcopy("$source/$entry", "$dest/$entry", $permissions);
+    }
+
+    // Clean up
+    $dir->close();
+    return true;
+}
+
+
+
 function createFile($file="", $uri="")
 {
 
 	if( !is_dir("compile/") ){
 		mkdir("compile");
 	}
+
+
+	if( !is_dir("compile/assets/") ){
+		mkdir("compile/assets/");
+	}
+	xcopy('assets/css/', 'compile/assets/css/');
+	xcopy('assets/js/', 'compile/assets/js/');
+	xcopy('assets/img/', 'compile/assets/img/');
+	xcopy('assets/fonts/', 'compile/assets/fonts/');
+	xcopy('share/', 'compile/share/');
 
 	$uri = empty($uri) ? "index" : $uri;
 	$myfile = fopen("compile/". $uri . '.html', "w") or die("Unable to open file!");
