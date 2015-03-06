@@ -3167,9 +3167,14 @@ body.lightbox_open {
         margin-left: auto;
         margin-right: auto; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .page {
     padding-bottom: 0; }
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
 
   .wrapper {
     padding-left: 38px;
@@ -3199,7 +3204,7 @@ body.lightbox_open {
   .donate-side .main-donate-info {
     position: relative;
     z-index: 2; }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) {
       .donate-side .main-donate-info .right_column {
         background-color: #EEEEEE; } }
     @media screen and (max-width: 480px) {
@@ -3245,14 +3250,14 @@ span.quote-normal:before {
   top: 8px;
   content: url(../img/quote-icon.png); }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   span.quote-normal:after {
     right: 314px; } }
 @media screen and (max-width: 480px) {
   span.quote-normal:after {
     top: -52px;
     right: 14px; } }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   span.quote-normal:before {
     left: 0px; } }
 .padding-special-legend {
@@ -3263,6 +3268,7 @@ span.quote-normal:before {
   list-style: none; }
   .main-donate-info ul li {
     font-size: 1em;
+    font-family: "Source Sans Pro", sans-serif;
     line-height: 140%;
     letter-spacing: 0.03em;
     margin: 0 0 26px 0;
@@ -3279,13 +3285,18 @@ span.quote-normal:before {
       height: 14px;
       background-position: -350px -640px;
       content: ""; }
+  @media screen and (max-width: 768px) {
+    .main-donate-info ul li {
+      font-family: "Source Sans Pro", sans-serif;
+      padding-left: 26px;
+      padding-right: 0px; } }
   @media screen and (max-width: 480px) {
     .main-donate-info ul li {
       font-family: "Source Sans Pro", sans-serif;
       padding-left: 26px;
       padding-right: 0px; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .img-responsive {
     margin-left: 0 !important; } }
 .bodytext2, .page .container .bodytext2 {
@@ -3307,7 +3318,7 @@ span.quote-normal:before {
 
 .padding-top-amazon-smile {
   padding-top: 12px; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .padding-top-amazon-smile {
       padding-top: 0px; } }
   @media screen and (max-width: 480px) {
@@ -3319,7 +3330,7 @@ span.quote-normal:before {
 
 .padding-left-info {
   padding-left: 40px; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .padding-left-info {
       padding-left: 50px; } }
   @media screen and (max-width: 480px) {
@@ -3334,7 +3345,7 @@ span.quote-normal:before {
 
 .padding-top-info {
   padding-top: 7px; }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     .padding-top-info {
       padding-top: 40px;
       padding-bottom: 34px; } }
@@ -3345,9 +3356,18 @@ span.quote-normal:before {
 .padding-top-18 {
   padding-top: 18px; }
 
-.padding-right-phone-52 {
+.padding-right-phone {
   padding-right: 52px !important; }
 
+@media screen and (max-width: 768px) {
+  .padding-right-phone {
+    padding-right: 122px !important; }
+
+  .padding-right-special {
+    padding-right: 52px !important; } }
+@media screen and (max-width: 768px) and (max-width: 468px) {
+  .padding-right-phone {
+    padding-right: 0 !important; } }
 .section-background {
   position: absolute;
   height: 100%;
@@ -3370,8 +3390,9 @@ span.quote-normal:before {
   padding-bottom: 30px; }
   .color-secondary h3 {
     padding-top: 40px;
-    padding-bottom: 12px; }
-    @media screen and (max-width: 767px) {
+    padding-bottom: 12px;
+    text-align: center !important; }
+    @media screen and (max-width: 768px) {
       .color-secondary h3 {
         margin-top: 0;
         padding-top: 20px; } }
@@ -3379,11 +3400,34 @@ span.quote-normal:before {
       .color-secondary h3 {
         margin-top: 0;
         padding-top: 20px; } }
+  .color-secondary p {
+    font-family: "Source Sans Pro", sans-serif; }
   .color-secondary h3, .color-secondary p {
     color: #FFFFFF; }
   .color-secondary .button-primary, .color-secondary #social .blog p a.button-primary, #social .blog p .color-secondary a.button-primary, .color-secondary #social .left_column p a.button-primary, #social .left_column p .color-secondary a.button-primary, .color-secondary .social .blog p a.button-primary, .social .blog p .color-secondary a.button-primary, .color-secondary .social .left_column p a.button-primary, .social .left_column p .color-secondary a.button-primary, .color-secondary .colored-column .blog p a.button-primary, .colored-column .blog p .color-secondary a.button-primary, .color-secondary .colored-column .left_column p a.button-primary, .colored-column .left_column p .color-secondary a.button-primary, .color-secondary #social .twitter p a.button-primary, #social .twitter p .color-secondary a.button-primary, .color-secondary #social .right_column p a.button-primary, #social .right_column p .color-secondary a.button-primary, .color-secondary .social .twitter p a.button-primary, .social .twitter p .color-secondary a.button-primary, .color-secondary .social .right_column p a.button-primary, .social .right_column p .color-secondary a.button-primary, .color-secondary .colored-column .twitter p a.button-primary, .colored-column .twitter p .color-secondary a.button-primary, .color-secondary .colored-column .right_column p a.button-primary, .colored-column .right_column p .color-secondary a.button-primary {
     color: #FFFFFF;
     border-color: #FFFFFF; }
+
+@media screen and (max-width: 768px) {
+  .center-white {
+    text-align: center !important; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .center-white {
+      text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .donate-padding-column-1 {
+    padding-right: 0; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .donate-padding-column-1 {
+      padding-right: 19px; } }
+
+@media screen and (max-width: 768px) {
+  .donate-padding-column-2 {
+    padding-right: 62px; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .donate-padding-column-2 {
+      padding-right: 18px; } }
 
 .faqs .container {
   max-width: 1010px; }

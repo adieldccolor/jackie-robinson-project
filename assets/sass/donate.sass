@@ -1,6 +1,11 @@
-@media screen and (max-width: 767px)
+@media screen and (max-width: 768px)
 	.page
 		padding-bottom: 0
+	
+	.container
+		width: 100%
+		margin-left: 0
+		margin-right: 0
 	
 	.wrapper
 		padding-left: 38px
@@ -38,7 +43,7 @@
 		z-index: 2
 				
 		.right_column
-			@media screen and (max-width: 767px)
+			@media screen and (max-width: 768px)
 				background-color: #EEEEEE
 				
 			@media screen and (max-width: 480px)
@@ -48,7 +53,7 @@
 	.align-left-320
 		text-align: left !important
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: 768px)
 h3
 	text-align: left !important
 	@media screen and (max-width: 468px)
@@ -85,7 +90,7 @@ span.quote-normal:before
 	top: 8px
 	content: url(../img/quote-icon.png)
 	
-@media screen and (max-width: 767px)
+@media screen and (max-width: 768px)
 	span.quote-normal:after
 		right: 314px
 
@@ -94,7 +99,7 @@ span.quote-normal:before
 		top: -52px
 		right: 14px
 	
-@media screen and (max-width: 767px)
+@media screen and (max-width: 768px)
 	span.quote-normal:before
 		left: 0px
 	
@@ -107,6 +112,7 @@ span.quote-normal:before
 		list-style: none
 		li
 			font-size: 1em
+			font-family: 'Source Sans Pro', sans-serif
 			line-height: 140%
 			letter-spacing: 0.03em
 			margin: 0 0 26px 0
@@ -123,13 +129,19 @@ span.quote-normal:before
 				height: 14px
 				background-position: -350px -640px
 				content: ""
+				
+		@media screen and (max-width: 768px)
+			li
+				font-family: 'Source Sans Pro', sans-serif
+				padding-left: 26px
+				padding-right: 0px
 		@media screen and (max-width: 480px)
 			li
 				font-family: 'Source Sans Pro', sans-serif
 				padding-left: 26px
 				padding-right: 0px
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: 768px)
 	.img-responsive
 		margin-left: 0 !important
 					
@@ -151,7 +163,7 @@ span.quote-normal:before
 	
 .padding-top-amazon-smile
 	padding-top: 12px
-	@media screen and (max-width: 767px)
+	@media screen and (max-width: 768px)
 		padding-top: 0px
 	@media screen and (max-width: 480px)
 		padding-top: 12px
@@ -161,7 +173,7 @@ span.quote-normal:before
 				
 .padding-left-info
 	padding-left: 40px
-	@media screen and (max-width: 767px)
+	@media screen and (max-width: 768px)
 		padding-left: 50px
 		
 	@media screen and (max-width: 480px)
@@ -174,7 +186,7 @@ span.quote-normal:before
 		
 .padding-top-info
 	padding-top: 7px
-	@media screen and (max-width: 767px)
+	@media screen and (max-width: 768px)
 		padding-top: 40px
 		padding-bottom: 34px
 				
@@ -184,8 +196,19 @@ span.quote-normal:before
 .padding-top-18
 	padding-top: 18px 
 			
-.padding-right-phone-52
+.padding-right-phone
 	padding-right: 52px !important
+
+@media screen and (max-width: 768px)
+	.padding-right-phone
+		padding-right: 122px !important
+		
+	.padding-right-special
+		padding-right: 52px !important
+	
+	@media screen and (max-width: 468px)
+		.padding-right-phone
+			padding-right: 0 !important
 			
 .section-background
 	position: absolute
@@ -213,14 +236,18 @@ span.quote-normal:before
 	h3
 		padding-top: 40px
 		padding-bottom: 12px
+		text-align: center !important
 		
-		@media screen and (max-width: 767px)
+		@media screen and (max-width: 768px)
 			margin-top: 0
 			padding-top: 20px
 		
 		@media screen and (max-width: 480px)
 			margin-top: 0
 			padding-top: 20px
+			
+	p
+		font-family: 'Source Sans Pro', sans-serif
 	
 	h3, p
 		color: #FFFFFF
@@ -228,3 +255,21 @@ span.quote-normal:before
 	.button-primary
 		color: #FFFFFF
 		border-color: #FFFFFF
+		
+@media screen and (max-width: 768px)
+	.center-white
+		text-align: center !important
+		@media screen and (max-width: 480px)
+			text-align: center
+
+@media screen and (max-width: 768px)
+	.donate-padding-column-1
+		padding-right: 0
+		@media screen and (max-width: 480px)
+			padding-right: 19px
+
+@media screen and (max-width: 768px)
+	.donate-padding-column-2
+		padding-right: 62px
+		@media screen and (max-width: 480px)
+			padding-right: 18px
