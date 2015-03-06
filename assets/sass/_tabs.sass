@@ -34,7 +34,7 @@
 				font-family: $sourcesans
 				font-weight: 500
 				color: #7f7f7f
-				font-size: 1.22em
+				font-size: 1em
 				line-height: 50px
 				padding: 0 10px
 				text-align: center
@@ -87,6 +87,16 @@
 						bottom: -24px
 						left: 50%
 						margin-left: -12px
+
+		&.normal-size
+			li
+				width: 175px
+				@media screen and (max-width: 992px)
+					width: 175px
+				@media screen and (max-width: 710px)
+					width: 175px
+				@media screen and (max-width: 680px)
+					width: 100%
 	
 	&.expanded
 		ul

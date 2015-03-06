@@ -50,6 +50,20 @@ class PagesController extends App
 		return $this->page("alumni", false);
 	}
 
+	function sponsors()
+	{
+		return $this->page("sponsors", false);
+	}
+
+	function museum()
+	{
+		return $this->page("museum");
+	}
+
+
+
+
+
 	function boardDirectors()
 	{
 		return $this->page("board of directors", false);
@@ -75,13 +89,15 @@ class PagesController extends App
 	//Support page
 	function mediakit()
 	{
-		return $this->page("media_kit",false);
+		return $this->page("media_kit", false);
 	}
 	
 	function donate()
 	{
 		return $this->page("donate", false);
 	}
+
+
 
 
 	//gallery page
@@ -147,20 +163,19 @@ class PagesController extends App
 		return $this->page("sitemap",false);
 	}
 
-		function press()
+	function news()
+	{
+		return $this->page("news",false);
+	}
+	
+	function press()
 	{
 		return $this->page("press",false);
 	}
 
-	function press_post()
+			function press_post()
 	{
 		return $this->page("press_post",false);
-	}
-	
-
-	function news()
-	{
-		return $this->page("news",false);
 	}
 	
 

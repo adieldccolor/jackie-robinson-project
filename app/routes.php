@@ -10,6 +10,8 @@ Route::controller('about-us', 'PagesController@about');
 Route::controller('scholars', 'PagesController@scholars');
 Route::controller('scholars.bio', 'PagesController@scholarsBio');
 Route::controller('alumni', 'PagesController@alumni');
+Route::controller('sponsors', 'PagesController@sponsors');
+Route::controller('museum', 'PagesController@museum');
 Route::controller('board-of-directors', 'PagesController@boardDirectors');
 Route::controller('support-network', 'PagesController@supportNetwork');
 
@@ -23,7 +25,6 @@ Route::controller('timeline', 'PagesController@timeline');
 //Support pages
 Route::controller('support', 'PagesController@support');
 Route::controller('donate', 'PagesController@donate');
-
 Route::controller('faqs', 'PagesController@faqs');
 Route::controller('news', 'PagesController@news');
 Route::controller('terms', 'PagesController@terms');

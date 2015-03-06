@@ -11,7 +11,7 @@
 	-o-transition: all 0.4s
 	transition: all 0.4s
 	border-bottom: 1px solid #D6D6D6
-	@media screen and (max-width: 767px)
+	@media screen and (max-width: 768px)
 		min-height: 60px
 		-webkit-transition: all 0s
 		-moz-transition: all 0s
@@ -25,7 +25,7 @@
 		width: 250px
 		@media screen and (max-width: 980px)
 			width: 168px
-		@media screen and (max-width: 767px)
+		@media screen and (max-width: 768px)
 			width: 100%
 	.logo-letter
 		// display: none
@@ -54,7 +54,7 @@
 		-ms-transform-origin: 100% 50%
 		-o-transform-origin: 100% 50%
 		transform-origin: 100% 50%
-		@media screen and (max-width: 767px)
+		@media screen and (max-width: 768px)
 			margin: 12px
 	.logo
 		font-size: 12px
@@ -75,10 +75,10 @@
 		@media screen and (max-width: 980px)
 			width: 120px
 			margin-top: 25px
-		@media screen and (max-width: 767px)
+		@media screen and (max-width: 768px)
 			padding: 0
 			width: 85px
-			margin: 0px 0px 0px 30px
+			margin: 0px 0px 0px 45px
 			-webkit-transition: all 0s
 			-moz-transition: all 0s
 			-ms-transition: all 0s
@@ -109,11 +109,11 @@
 		transition: all 0.4s
 	.pull-btn
 		display: none
-	@media screen and (max-width: 767px)
+	@media screen and (max-width: 768px)
 		.navbar-btn
 			display: inline-block
 			vertical-align: top
-			width: 53px
+			width: 36px
 			height: 34px
 			background-color: transparent
 			border: none
@@ -137,7 +137,7 @@
 		.pull-btn
 			height: 60px
 			line-height: 60px
-			margin-right: 28px
+			margin-right: 45px
 			display: block
 	#navbar
 		background-color: transparent
@@ -152,12 +152,12 @@
 			margin-top: 14px
 			float: right
 			margin-right: 50px
-		@media screen and (max-width: 767px)
+		@media screen and (max-width: 768px)
 			clear: both
 			position: fixed
 			height: 100%
 			overflow: auto
-			width: 85%
+			width: 221px
 			display: block
 			background-color: #eeeeee
 			top: 0
@@ -172,10 +172,16 @@
 			-ms-transition: visibility 0.3s 0.4s, opacity 0.3s 0.4s, right 0.4s 0s
 			-o-transition: visibility 0.3s 0.4s, opacity 0.3s 0.4s, right 0.4s 0s
 			transition: visibility 0.3s 0.4s, opacity 0.3s 0.4s, right 0.4s 0s
+		@media screen and (max-width: 500px)
+			width: 85%
 		.navbar-header-mobile
 			min-height: 76px
 			line-height: 76px
-			padding: 0 16px
+			padding: 0 22px
+
+			.row, [class*="col-"]
+				padding: 0
+				margin: 0
 
 			.navbar-btn
 				margin-top: 12px
@@ -190,27 +196,32 @@
 			@media screen and (max-width: 1270px)
 				margin: 0
 				clear: both
-			@media screen and (min-width: 768px)
+			@media screen and (min-width: 769px)
 				&.main-menu
 					margin: 0px 0px 0px 170px
 			@media screen and (min-width: 992px)
 				&.main-menu
 					margin: 0px 0px 0px 252px
 			li
+				@media screen and (max-width: 768px)
+					border-bottom: 1px solid #D6D6D6
 				.container
 					@media screen and (max-width: 768px)
 						padding: 0
 				ul
-					@media screen and (min-width: 768px)
+					@media screen and (min-width: 769px)
 						display: none
-				@media screen and (max-width: 767px)
-					margin: 0 14px
+				@media screen and (max-width: 768px)
+					margin: 0 22px
 					&:last-child
 						border-bottom: none
+					a
+						padding-left: 0
+						padding-right: 0
 					ul
 						display: block
 						padding: 0
-						margin-left: 14px
+						margin-left: 0px
 						opacity: 0
 						visibility: hidden
 						max-height: 0
@@ -223,14 +234,16 @@
 						li
 							display: block
 							border-bottom: none
+							padding: 0
+							margin: 0
 							a
 								display: block
 								color: #666
 								text-transform: uppercase
 								font-size: 16px
 								font-size: 16.8px
-								padding: 7px 7px
-								padding: 7px 6.72px
+								padding: 7px 0px
+								padding: 7px 0px
 							&:first-child
 								a
 									padding-top: 0
@@ -248,16 +261,16 @@
 					position: relative
 					@media screen and (max-width: 980px)
 						padding: 0.833em 0.48em			
-					@media screen and (max-width: 767px)
-						padding: 12px 7px		
-						padding: 11.66px 6.72px			
+					@media screen and (max-width: 768px)
+						padding: 12px 0px		
+						padding: 11.66px 0px			
 						display: block
 						width: 100%
 					&:hover, &:focus
 						color: #2AA5D1
 						background-color: transparent
 				&.active
-					@media screen and (min-width: 768px)
+					@media screen and (min-width: 769px)
 						position: static
 						a, a:hover, a:focus
 							color: #2AA5D1
@@ -307,7 +320,7 @@
 							-o-transition: all 0.4s
 							transition: all 0.4s
 							overflow: hidden
-							@media screen and (min-width: 768px)
+							@media screen and (min-width: 769px)
 								border-bottom: 1px solid #D6D6D6
 							@media screen and (max-width: 1270px)
 								// top: 140px
@@ -365,7 +378,7 @@
 			@media screen and (max-width: 1270px)
 				margin-right: 0
 				// float: none !important
-			@media screen and (max-width: 767px)
+			@media screen and (max-width: 768px)
 				max-height: 140px
 				margin-top: 0
 			li
@@ -380,7 +393,7 @@
 				button
 					border: none
 	&.sticky
-		@media screen and (min-width: 768px)
+		@media screen and (min-width: 769px)
 			min-height: 84px
 		.logo-letter
 			// display: block !important
@@ -408,23 +421,23 @@
 			// -o-transform: scale(0.8)
 			// transform: scale(0.8)
 			// margin-top: -35px
-			@media screen and (min-width: 768px)
+			@media screen and (min-width: 769px)
 				width: 92px
 				margin-top: 5px
 			@media screen and (max-width: 992px)
 				margin-top: 0
-			@media screen and (max-width: 767px)
+			@media screen and (max-width: 768px)
 				margin-top: 0px
 		.row
 			#navbar
 				margin-top: 0 !important
-				@screen and (min-width: 768px)
+				@screen and (min-width: 769px)
 					margin-top: 0 !important
 				.navbar-nav
 					margin-top: 14px !important
-					@media screen and (max-width: 1270px) and (min-width: 768px)
+					@media screen and (max-width: 1270px) and (min-width: 769px)
 						margin-top: 7px !important
-					@media screen and (max-width: 767px)
+					@media screen and (max-width: 768px)
 						margin-top: 0 !important
 					@media screen and (min-width: 993px)
 						&.main-menu
@@ -439,7 +452,7 @@
 								-ms-transition: all 0.2s
 								-o-transition: all 0.2s
 								transition: all 0.2s
-								@media screen and (min-width: 768px)
+								@media screen and (min-width: 769px)
 									overflow: hidden
 									top: 83px
 									height: 40px
@@ -451,7 +464,7 @@
 										margin: 0 180px
 										width: 100%
 							&.active
-								@media screen and (min-width: 768px)
+								@media screen and (min-width: 769px)
 									>a
 										&:before
 											bottom: -20px
@@ -494,7 +507,7 @@
 								transition: padding 0.2s, margin 0.2s, font-size 0.2s, heightt 0.2s
 
 
-@media screen and (max-width: 767px)
+@media screen and (max-width: 768px)
 	body
 		.menuTop, .menuHidden
 			#navbar
@@ -567,9 +580,9 @@
 
 .menuHidden
 	position: relative
-	@media screen and (min-width: 768px)
+	@media screen and (min-width: 769px)
 		margin-bottom: 64px
 		&.no-submenu
 			margin-bottom: 0
-	@media screen and (max-width: 767px)
+	@media screen and (max-width: 768px)
 		display: none
