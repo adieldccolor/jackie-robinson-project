@@ -1,8 +1,6 @@
 @{{ if(!$ajax): }}@
 @{{ if($compile): }}@
-<div style="margin: 50px auto;max-width: 100%;padding: 10px;">
-<h1>Seguro que desea compilar?</h1>
-<form method="post"><textarea rows="10" name="file" style="position: absolute; opacity: 0;visibility: hidden;">
+{{ open_compile_template() }}
 @{{ endif; }}@
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +32,9 @@
 <body class="@{{ if(!is_active("/") ): }}@isPage@{{ endif; }}@" >
 
 @{{ if(!$compile): }}@
-<a href="?compile" style="position:fixed; bottom: 20px; left: 20px; padding: 20px; border: none; color: #fff; background: #94B933; z-index: 999999999999">Compilar pagina</a>
+
+{{ compile_snackbar() }}
+
 @{{ endif; }}@
 
 @{{ endif; }}@
