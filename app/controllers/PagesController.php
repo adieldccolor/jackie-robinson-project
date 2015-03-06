@@ -75,7 +75,7 @@ class PagesController extends App
 	//Support page
 	function mediakit()
 	{
-		return $this->page("media_kit");
+		return $this->page("media_kit",false);
 	}
 	
 	function donate()
@@ -152,9 +152,15 @@ class PagesController extends App
 		return $this->page("press",false);
 	}
 
-			function press_post()
+	function press_post()
 	{
 		return $this->page("press_post",false);
+	}
+	
+
+	function news()
+	{
+		return $this->page("news",false);
 	}
 	
 

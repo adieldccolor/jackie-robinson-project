@@ -25,6 +25,7 @@ Route::controller('support', 'PagesController@support');
 Route::controller('donate', 'PagesController@donate');
 
 Route::controller('faqs', 'PagesController@faqs');
+Route::controller('news', 'PagesController@news');
 Route::controller('terms', 'PagesController@terms');
 Route::controller('media-kit', 'PagesController@mediakit');
 Route::controller('sitemap', 'PagesController@sitemap');
