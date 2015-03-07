@@ -1,0 +1,7 @@
+.news .container span {
+  display: block;
+  margin-bottom: 25px; }
+.news .container h3 {
+  margin-top: 18px !important; }
+.news .container .last_span {
+  margin-bottom: -21px; }
