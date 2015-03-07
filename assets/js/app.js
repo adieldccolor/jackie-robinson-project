@@ -382,41 +382,41 @@ var base = window.base_font_size || 10,
 				var Increments = { colleges: 0, collegesBig: 0, programs: 0, scholars: 0, graduations: 0, 
 						impacted: 0, scholarsBig: 0, graduationsBig: 0, programsBig: 0, impacted: 0 };
 
-				var tweencollege = TweenMax.to(Increments, 1, {
-				      colleges: 225, 
-				      onUpdate: function () {
-				          $('.colleges-increment').text(parseInt(Increments.colleges))
-				      },
-				      ease:Circ.easeOut
-				  });
+				// var tweencollege = TweenMax.to(Increments, 1, {
+				//       colleges: 225, 
+				//       onUpdate: function () {
+				//           $('.colleges-increment').text(parseInt(Increments.colleges))
+				//       },
+				//       ease:Circ.easeOut
+				//   });
 
 				
 
-				var tweenPrograms = TweenMax.to(Increments, 1, {
-				      programs: 65, 
-				      onUpdate: function () {
-				          $('.programsIncrement').html('$' + parseInt(Increments.programs) + '&nbsp;M')
-				      },
-				      ease:Circ.easeOut
-				  });
+				// var tweenPrograms = TweenMax.to(Increments, 1, {
+				//       programs: 65, 
+				//       onUpdate: function () {
+				//           $('.programsIncrement').html('$' + parseInt(Increments.programs) + '&nbsp;M')
+				//       },
+				//       ease:Circ.easeOut
+				//   });
 				
 				
 
-				var tweenScholars = TweenMax.to(Increments, 1, {
-				      scholars: 1450, 
-				      onUpdate: function () {
-				          $('.scholarsIncrement').text(thousands(parseInt(Increments.scholars)))
-				      },
-				      ease:Circ.easeOut
-				  });
+				// var tweenScholars = TweenMax.to(Increments, 1, {
+				//       scholars: 1450, 
+				//       onUpdate: function () {
+				//           $('.scholarsIncrement').text(thousands(parseInt(Increments.scholars)))
+				//       },
+				//       ease:Circ.easeOut
+				//   });
 
-				var tweenGraduations = TweenMax.to(Increments, 1, {
-				      graduations: 100, 
-				      onUpdate: function () {
-				          $('.graduationsIncrement').text("~" + parseInt(Increments.graduations) + "%")
-				      },
-				      ease:Circ.easeOut
-				  });
+				// var tweenGraduations = TweenMax.to(Increments, 1, {
+				//       graduations: 100, 
+				//       onUpdate: function () {
+				//           $('.graduationsIncrement').text("~" + parseInt(Increments.graduations) + "%")
+				//       },
+				//       ease:Circ.easeOut
+				//   });
 
 
 	
@@ -438,28 +438,28 @@ var base = window.base_font_size || 10,
 								.setTween(tween)
 								.addTo(controller);
 
-				var scene2 = new ScrollScene({triggerElement: ".colleges-increment", duration: 300, offset: -250})
-								.setTween(tweencollege)
-								.addTo(controller);
+				// var scene2 = new ScrollScene({triggerElement: ".colleges-increment", duration: 300, offset: -250})
+				// 				.setTween(tweencollege)
+				// 				.addTo(controller);
 
 				
 				var scene5 = new ScrollScene({triggerElement: ".impactBigItem", duration: 300, offset: -250})
 								.setTween(tweenImpactBigItem)
 								.addTo(controller);
 
-				var scene4 = new ScrollScene({triggerElement: ".programsIncrement", duration: 300, offset: -250})
-								.setTween(tweenPrograms)
-								.addTo(controller);
+				// var scene4 = new ScrollScene({triggerElement: ".programsIncrement", duration: 300, offset: -250})
+				// 				.setTween(tweenPrograms)
+				// 				.addTo(controller);
 				
 				
-				var scene7 = new ScrollScene({triggerElement: ".scholarsIncrement", duration: 300, offset: -250})
-								.setTween(tweenScholars)
-								.addTo(controller);
+				// var scene7 = new ScrollScene({triggerElement: ".scholarsIncrement", duration: 300, offset: -250})
+				// 				.setTween(tweenScholars)
+				// 				.addTo(controller);
 			
 
-				var scene9 = new ScrollScene({triggerElement: ".graduationsIncrement", duration: 300, offset: -250})
-								.setTween(tweenGraduations)
-								.addTo(controller);
+				// var scene9 = new ScrollScene({triggerElement: ".graduationsIncrement", duration: 300, offset: -250})
+				// 				.setTween(tweenGraduations)
+				// 				.addTo(controller);
 
 				
 				

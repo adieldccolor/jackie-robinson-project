@@ -60,6 +60,13 @@ class PagesController extends App
 		return $this->page("museum");
 	}
 
+	function financialReports()
+	{
+		return $this->page("financial reports", false);
+	}
+
+
+
 
 
 

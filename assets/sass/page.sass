@@ -104,6 +104,61 @@ body.isPage
 	&.internal-page
 		padding-bottom: 60px
 
+
+.page.jrf-impact-section
+	.container
+		padding-left: 39px
+		padding-right: 39px
+		.row
+			margin-left: -39px
+			margin-right: -39px
+			[class*="col-"]
+				padding-left: 39px
+				padding-right: 39px
+	.img-wrapper
+		margin: 0
+	.img-impact
+		margin-top: 90px
+		margin-bottom: 90px
+		@media screen and (max-width: 767px)
+			margin-top: 20px
+			margin-bottom: 0
+	.leading-impact
+		padding-top: 80px
+		@media screen and (max-width: 992px)
+			padding-top: 40px
+		@media screen and (max-width: 767px)
+			padding-top: 20px
+		p
+			margin-bottom: 20px
+			a
+				margin-top: 0
+
+
+ul.bullet-list
+	padding: 0
+	list-style: none
+	li
+		font-size: 1em
+		line-height: 140%
+		letter-spacing: 0.03em
+		margin: 0 0 20px 0
+		font-family: $sourcesans
+		padding-left: 31px
+		padding-right: 31px
+		position: relative
+		&:before
+			display: block
+			position: absolute
+			left: 0
+			top: 7px
+			background: url(../img/sprite.png) 0 0 no-repeat
+			width: 13px
+			height: 14px
+			background-position: -350px -640px
+			content: ""
+
+
 @media screen and (max-width: 768px)
 	img.img-block
 		display: block

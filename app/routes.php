@@ -11,6 +11,7 @@ Route::controller('scholars', 'PagesController@scholars');
 Route::controller('scholars.bio', 'PagesController@scholarsBio');
 Route::controller('alumni', 'PagesController@alumni');
 Route::controller('sponsors', 'PagesController@sponsors');
+Route::controller('financial-reports', 'PagesController@financialReports');
 Route::controller('museum', 'PagesController@museum');
 Route::controller('board-of-directors', 'PagesController@boardDirectors');
 Route::controller('support-network', 'PagesController@supportNetwork');

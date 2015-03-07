@@ -30,9 +30,9 @@
           </div>
 
           <ul class="nav navbar-nav navbar-right hidden-xs">
-            <li {{ active_class("jrf-connect") }}><a href="{{ env_url('jrf-connect') }}">JRF CONNECT</a></li>
+            <li {{ active_class("jrf-connect") }}><a href="http://jrfconnect.org/" target="_blank">JRF CONNECT</a></li>
             <li {{ active_class("search") }}><a href="{{ env_url('search') }}" class="search-button">SEARCH</a></li>
-            <li style="margin-top: 4px"><button class="btn-donate" onclick="window.location='{{ env_url('donate') }}'">DONATE</button></li>
+            <li style="margin-top: 4px"><a href="https://www.networkforgood.org/donation/ExpressDonation.aspx?ORGID2=132896345&vlrStratCode=CRh1g3yyYDbfn79wVhlb2yoQhj5vCD0ucVaJS1xKYROSkwMprkXE5JnDFxqPxwcY" class="btn-donate" target="_blank">DONATE</a></li>
           </ul>
           <ul class="nav navbar-nav main-menu">
             <li {{ active_class("impact mission programs impact conference") }}><a href="{{ env_url('impact') }}">Our Impact <span class="collapse-icon"></span></a>
@@ -45,7 +45,7 @@
                 </div>
               </ul>
             </li>
-            <li {{ active_class("about-us scholars alumni board-of-directors staff sponsors support-network museum finacial-reports scholars.bio") }}><a href="{{ env_url('about-us') }}">About Us <span class="collapse-icon"></span></a>
+            <li {{ active_class("about-us scholars alumni board-of-directors staff sponsors support-network museum financial-reports scholars.bio") }}><a href="{{ env_url('about-us') }}">About Us <span class="collapse-icon"></span></a>
               <ul>
                 <div class="container">
                   <li {{ active_class("scholars scholars.bio") }}><a href="{{ env_url('scholars') }}">scholars</a></li>
@@ -55,7 +55,7 @@
                   <li {{ active_class("sponsors") }}><a href="{{ env_url('sponsors') }}">sponsors</a></li>
                   <li {{ active_class("support-network") }}><a href="{{ env_url('support-network') }}">support network</a></li>
                   <li {{ active_class("museum") }}><a href="{{ env_url('museum') }}">museum</a></li>
-                  <li {{ active_class("finacial-reports") }}><a href="{{ env_url('financial-reports') }}">finacial reports</a></li>
+                  <li {{ active_class("financial-reports") }}><a href="{{ env_url('financial-reports') }}">finacial reports</a></li>
                 </div>
               </ul>
             </li>
@@ -101,8 +101,8 @@
             </li>              
           </ul>
           <ul class="nav navbar-nav navbar-right visible-xs">
-            <li {{ active_class("jrf-connect") }}><a href="jrf-connect">JRF CONNECT</a></li>
-            <li style="margin-top: 4px"><button class="btn-donate">DONATE</button></li>
+            <li {{ active_class("jrf-connect") }}><a href="http://jrfconnect.org/" target="_blank">JRF CONNECT</a></li>
+            <li style="margin-top: 4px"><a href="https://www.networkforgood.org/donation/ExpressDonation.aspx?ORGID2=132896345&vlrStratCode=CRh1g3yyYDbfn79wVhlb2yoQhj5vCD0ucVaJS1xKYROSkwMprkXE5JnDFxqPxwcY" target="_blank" class="btn-donate">DONATE</a></li>
           </ul>
         </div><!--/.nav-collapse -->
         <div class="overlay"></div>
@@ -111,7 +111,7 @@
         <div class="container">
           <form>
             <button type="submit" class="search-submit"><i class="icon searchIcon inverted"></i><span>Search</span></button>
-            <input type="text" name="search" id="search" value="Type in search..." class="form-control search-input">
+            <input type="text" name="search" id="search" value="Search..." class="form-control search-input">
             <div class="clearfix"></div>
           </form>
         </div>

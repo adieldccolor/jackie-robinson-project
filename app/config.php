@@ -8,4 +8,4 @@ $site_title = $title;
 
 $partials = "views/";
 
-$path = "//localhost/jackie-robinson-project";
+$path = "//localhost/dccolor/jackie/";

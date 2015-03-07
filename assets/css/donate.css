@@ -1,157 +1,87 @@
-.donate-side, .useGreySidebar {
-  position: relative;
-  overflow: hidden; }
-  @media screen and (max-width: 767px) {
-    .donate-side, .useGreySidebar {
-      padding-bottom: 0; } }
-  @media screen and (max-width: 480px) {
-    .donate-side, .useGreySidebar {
-      padding-bottom: 0; }
-      .donate-side .col-xxs, .useGreySidebar .col-xxs {
-        width: 100%;
-        float: none;
-        display: block; } }
-  .donate-side .right_column, .useGreySidebar .right_column {
-    position: relative; }
-    .donate-side .right_column .wrapper, .useGreySidebar .right_column .wrapper {
-      position: relative;
-      z-index: 1; }
-  .donate-side .main-donate-info, .donate-side .main-info, .useGreySidebar .main-donate-info, .useGreySidebar .main-info {
-    position: relative;
-    z-index: 2; }
-    .donate-side .main-donate-info .button-xxs-center, .donate-side .main-info .button-xxs-center, .useGreySidebar .main-donate-info .button-xxs-center, .useGreySidebar .main-info .button-xxs-center {
-      margin-left: auto;
-      margin-right: auto;
-      display: block; }
-    @media screen and (max-width: 767px) {
-      .donate-side .main-donate-info .right_column, .donate-side .main-info .right_column, .useGreySidebar .main-donate-info .right_column, .useGreySidebar .main-info .right_column {
-        background-color: #EEEEEE; } }
-    @media screen and (max-width: 480px) {
-      .donate-side .main-donate-info .right_column, .donate-side .main-info .right_column, .useGreySidebar .main-donate-info .right_column, .useGreySidebar .main-info .right_column {
-        background-color: #EEEEEE; } }
+/*
+Error: Undefined variable: "$sourcesans".
+        on line 77 of C:\apacheServer\www\dccolor\jackie\assets\sass\donate.sass
 
-.hr-donate {
-  border-width: 2px;
-  border-color: #EEEEEE; }
+72: 			letter-spacing: 0.03em
+73: 			margin: 0 0 26px 0
+74: 			padding-left: 31px
+75: 			padding-right: 31px
+76: 			position: relative
+77: 			font-family: $sourcesans
+78: 			&:before
+79: 				display: block
+80: 				position: absolute
+81: 				left: 0
+82: 				top: 7px
 
-h3.padding-special-quote {
-  padding: 0 0 0 28px;
-  marging: 0; }
-
-span.quote-normal:after {
-  position: relative;
-  float: right;
-  top: -32px;
-  right: 148px;
-  content: url(../img/inverted-quote-icon.png); }
-
-span.quote-normal:before {
-  position: relative;
-  float: left;
-  top: 8px;
-  content: url(../img/quote-icon.png); }
-
-.padding-special-legend {
-  padding-left: 28px; }
-
-.main-donate-info ul {
-  padding: 0;
-  list-style: none; }
-  .main-donate-info ul li {
-    font-size: 1em;
-    line-height: 140%;
-    letter-spacing: 0.03em;
-    margin: 0 0 26px 0;
-    padding-left: 31px;
-    padding-right: 31px;
-    position: relative; }
-    .main-donate-info ul li:before {
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 7px;
-      background: url(../img/sprite.png) 0 0 no-repeat;
-      width: 13px;
-      height: 14px;
-      background-position: -350px -640px;
-      content: ""; }
-
-.page .bullet-list {
-  @exted .main-donate-info ul; }
-
-.bodytext2 {
-  padding-right: 18px; }
-
-.text-size-special {
-  font-size: 1.22em !important; }
-
-.bold-text {
-  color: #000000;
-  font-weight: 700; }
-
-.underline-phone {
-  color: #263752;
-  text-decoration: underline; }
-
-.padding-top-amazon-smile {
-  padding-top: 12px; }
-
-.padding-top-left-info {
-  padding-top: 14px; }
-
-.padding-left-info {
-  padding-left: 40px; }
-
-.padding-right-info {
-  padding-right: 50px !important; }
-
-.padding-top-info {
-  padding-top: 7px; }
-
-.text-blue {
-  color: #263752; }
-
-.padding-top-18 {
-  padding-top: 18px; }
-
-.padding-right-phone-52 {
-  padding-right: 52px !important; }
-
-.section-background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0; }
-  .section-background .back-donate-side {
-    position: absolute;
-    height: 100%;
-    width: 6000px;
-    top: 0;
-    left: 0;
-    background-color: #EEEEEE; }
-  .section-background .container, .section-background .row, .section-background [class*="col-"] {
-    position: relative;
-    height: 100%; }
-
-.color-secondary {
-  background-color: #263752;
-  padding-bottom: 30px; }
-  .color-secondary h3 {
-    padding-top: 40px;
-    padding-bottom: 12px; }
-    @media screen and (max-width: 767px) {
-      .color-secondary h3 {
-        margin-top: 0;
-        padding-top: 20px; } }
-    @media screen and (max-width: 480px) {
-      .color-secondary h3 {
-        margin-top: 0;
-        padding-top: 20px; } }
-  .color-secondary h3, .color-secondary p {
-    color: #FFFFFF; }
-  .color-secondary .button-primary {
-    color: #FFFFFF;
-    border-color: #FFFFFF; }
-
-/*# sourceMappingURL=donate.css.map */
+Backtrace:
+C:\apacheServer\www\dccolor\jackie\assets\sass\donate.sass:77
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:18:in `load'
+C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$sourcesans\".\A         on line 77 of C:\apacheServer\www\dccolor\jackie\assets\sass\donate.sass\A \A 72: 			letter-spacing: 0.03em\A 73: 			margin: 0 0 26px 0\A 74: 			padding-left: 31px\A 75: 			padding-right: 31px\A 76: 			position: relative\A 77: 			font-family: $sourcesans\A 78: 			&:before\A 79: 				display: block\A 80: 				position: absolute\A 81: 				left: 0\A 82: 				top: 7px"; }

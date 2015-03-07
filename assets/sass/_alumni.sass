@@ -19,12 +19,28 @@
 		.container
 			padding-left: 10px
 			padding-right: 10px
+
 			.row
 				margin-left: -10px
 				margin-right: -10px
 				[class*="col-"]
 					padding-left: 10px
 					padding-right: 10px
+
+				.left_column
+					@media screen and (min-width: 992px)
+						.col-xs-4
+							width: 37%
+						.col-xs-8
+							width: 63%
+
+					.button-xxs-center
+						margin-left: 0
+						margin-right: 0
+						@media screen and (max-width: 480px)
+							margin-left: auto
+							margin-right: auto
+							display: block
 				
 				.col-xxs
 					@media screen and (max-width: 480px)
