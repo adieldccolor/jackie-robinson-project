@@ -92,6 +92,11 @@ class PagesController extends App
 	{
 		return $this->page("support");
 	}
+	
+	function otherways()
+	{
+		return $this->page("otherways");
+	}
 
 	//Support page
 	function mediakit()
