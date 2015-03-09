@@ -4,6 +4,7 @@ var base = window.base_font_size || 10,
 	initialNavigationHeight = {},
 	timer = timer || [],
 	owl = owl || null, owlSmall = owl || null, owlHistory = owl || null, ims = [], owlSponsors, owlSponsorsSmall,
+		owl_arr = [],
 	_images = 'bg',
 	app = {
 		imagePath: function(url){
@@ -314,6 +315,49 @@ var base = window.base_font_size || 10,
 
 
 
+			owl_arr['sponsors_awards'] = $("#awards-sponsors");
+			owl_arr['sponsors_awards'].addClass('hidden-xs');
+
+			owl_arr['sponsors_awards_small'] = owl_arr['sponsors_awards'].clone();
+			owl_arr['sponsors_awards_small'].addClass('visible-xs').removeClass('hidden-xs');
+			owl_arr['sponsors_awards'].after(owl_arr['sponsors_awards_small']);
+
+			owl_arr['sponsors_awards'].owl_twoCarousel({
+				items: 7,
+				autoWidth: true,
+				margin: 21,
+				loop: true,
+				speed: 800
+			});
+			owl_arr['sponsors_awards'] = $('#awards-sponsors').data('owl_twoCarousel');
+
+			owl_arr['sponsors_awards_small'].owl_twoCarousel({
+				items: 7,
+				margin: 10,
+				loop: true,
+				speed: 800,
+				responsive: {
+					0: {
+						items: 1,
+						autoWidth: false,
+						loop: true
+					}, 480: {
+						items: 2,
+						autoWidth: false,
+						loop: true
+					}, 500: {
+						items: 3,
+						autoWidth: false,
+						loop: true
+					}
+				}
+			});
+			owl_arr['sponsors_awards_small'] = owl_arr['sponsors_awards_small'].data('owl_twoCarousel');
+
+
+
+
+
 
 
 
@@ -332,11 +376,20 @@ var base = window.base_font_size || 10,
 				e.preventDefault(); e.stopPropagation();
 			    owlSponsors&&owlSponsors.next();
 			    owlSponsorsSmall&&owlSponsorsSmall.next();
+			    
+			    owl_arr['sponsors_awards']&&owl_arr['sponsors_awards'].next();
+			    owl_arr['sponsors_awards_small']&&owl_arr['sponsors_awards_small'].next();
+
 			  });
 			  $(".prev-sponsor").on('click', function(e){
 			  	e.preventDefault(); e.stopPropagation();
 			    owlSponsors&&owlSponsors.prev();
 			    owlSponsorsSmall&&owlSponsorsSmall.prev();
+
+			    owl_arr['sponsors_awards']&&owl_arr['sponsors_awards'].prev();
+			    owl_arr['sponsors_awards_small']&&owl_arr['sponsors_awards_small'].prev();
+
+
 			  });
 
 			  $(".next").on('click', function(e){
@@ -536,9 +589,9 @@ var base = window.base_font_size || 10,
 
 			var header = $('.header-image').length > 0;
 			if( header ){
-				timeline = $('.header-image');
+				header = $('.header-image');
 				
-				var imgs = timeline.find('img');
+				var imgs = header.find('img');
 				// imgs.css({ marginLeft: 0 });
 				
 				if( timer['headerresize'] != undefined ){ clearTimeout(timer['headerresize']); }
@@ -557,6 +610,38 @@ var base = window.base_font_size || 10,
 						}else{
 							var mL = (itemWidth - imgWidth) / 2;
 							img.css({ marginLeft: mL });
+						}
+
+					});
+
+				},10);
+			}
+
+			var error_page = $('.error-page .img-container').length > 0;
+			if( error_page ){
+				error_page = $('.error-page .img-container');
+				
+				var imgs = error_page.find('img');
+				// imgs.css({ marginLeft: 0 });
+				
+				if( timer['errorpageresize'] != undefined ){ clearTimeout(timer['errorpageresize']); }
+				timer['errorpageresize'] = setTimeout(function(){
+
+					imgs.each(function(e){
+						var img = $(this),
+							item = img.closest('.img-container'),
+							imgWidth = img.outerWidth(),
+							itemWidth = item.outerWidth();
+
+						if( imgWidth > itemWidth ){
+							var mL = (imgWidth - itemWidth) / 2;
+							img.css({ marginLeft: - mL });
+							// console.log(mL);
+						}
+						else{
+							var mL = (itemWidth - imgWidth) / 2;
+							// img.css({ marginLeft: mL });
+							img.css({ marginLeft: 'auto' });
 						}
 
 					});
@@ -608,10 +693,10 @@ var base = window.base_font_size || 10,
 
 
 						if( resized ){
-							$('.page-wrapper').addClass('animatedMargin');
+							$('.page-wrapper').not('.error-page').addClass('animatedMargin');
 						}
 
-						$('.page-wrapper').css({marginTop: newHeight + 'px'});
+						$('.page-wrapper').not('.error-page').css({marginTop: newHeight + 'px'});
 					// }else{
 					// 	var newHeight = submenuTop + submenuHeight;
 					// 	$('.page-wrapper').css({marginTop: newHeight + 'px'});
@@ -630,7 +715,7 @@ var base = window.base_font_size || 10,
 
 						if( resized == "scroll" ){ $(window).resize() }
 
-						$('.page-wrapper').css({marginTop: newHeight + 'px'});
+						$('.page-wrapper').not('.error-page').css({marginTop: newHeight + 'px'});
 					// }else{
 					// 	var newHeight = submenuTop + submenuHeight;
 					// 	$('.page-wrapper').css({marginTop: newHeight + 'px'});
