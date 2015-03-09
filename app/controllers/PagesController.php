@@ -87,9 +87,9 @@ class PagesController extends App
 		return $this->page("apply");
 	}
 
-	function applyLive()
+	function applyNotLive()
 	{
-		$varsApply = ["viewState" => "live"];
+		$varsApply = ["viewState" => "notlive"];
 		return $this->page("apply", true, $varsApply);
 	}
 
