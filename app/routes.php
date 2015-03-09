@@ -18,6 +18,8 @@ Route::controller('support-network', 'PagesController@supportNetwork');
 
 //apply pages
 Route::controller('apply', 'PagesController@apply');
+Route::controller('apply.notlive', 'PagesController@applyNotLive');
+Route::controller('apply.after', 'PagesController@applyAfter');
 
 
 //apply pages
@@ -26,7 +28,6 @@ Route::controller('timeline', 'PagesController@timeline');
 //Support pages
 Route::controller('support', 'PagesController@support');
 Route::controller('donate', 'PagesController@donate');
-Route::controller('otherways', 'PagesController@otherways');
 Route::controller('faqs', 'PagesController@faqs');
 Route::controller('news', 'PagesController@news');
 Route::controller('terms', 'PagesController@terms');

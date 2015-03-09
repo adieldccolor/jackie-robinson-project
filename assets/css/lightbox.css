@@ -27,7 +27,7 @@ body:after {
   display: none;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
   .lightbox{
     top: 10px !important;
   }
@@ -49,6 +49,7 @@ body:after {
   *zoom: 1;
   width: 250px;
   height: 250px;
+  /*padding: 0 65px;*/
   margin: 0 auto;
 }
 
@@ -103,13 +104,29 @@ body:after {
   height: 34px;
   cursor: pointer;
   display: block;
-  left: 20px;
+  left: 0px;
   z-index: 99;
+  margin-left: -65px;
+}
+
+@media screen and (max-width: 840px){
+  .lb-prev{
+    left: 20px;
+    margin-left: 0;
+  }
 }
 
 .lb-next{
   left: auto;
-  right: 20px;
+  right: 0px;
+  margin-right: -65px;
+}
+
+@media screen and (max-width: 840px){
+  .lb-next{
+    right: 20px;
+    margin-right: 0;
+  }
 }
 
 .lb-prev .icon, .lb-next .icon{
@@ -212,6 +229,7 @@ body:after {
   position: absolute;
   z-index: 50;
   right: 0px;
+  top: -25px;
 }
 
 .lb-close {
@@ -235,8 +253,13 @@ body:after {
 }
 
 @media screen and (max-width: 767px){
+  .lb-closeContainer{
+    top: 0;
+    right: 0px;
+  }
   .lb-close{
-    top: 10px;
+    top: 20px;
+    right: 20px;
   }
 }
 

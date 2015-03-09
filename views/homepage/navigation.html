@@ -4,7 +4,7 @@
         <div class="navbar-header">
 
 
-          <a class="navbar-brand logo" href="{{ env_url('./') }}"><img src="assets/img/logo.jpg"></a>
+          <a class="navbar-brand logo" href="{{ env_url('./') }}"><img src="assets/img/logo-new.png"></a>
          
           <div class="pull-right pull-btn">
             <a class="search-trigger-btn"><i class="icon searchIcon"></i></a>
@@ -55,7 +55,7 @@
                   <li {{ active_class("sponsors") }}><a href="{{ env_url('sponsors') }}">sponsors</a></li>
                   <li {{ active_class("support-network") }}><a href="{{ env_url('support-network') }}">support network</a></li>
                   <li {{ active_class("museum") }}><a href="{{ env_url('museum') }}">museum</a></li>
-                  <li {{ active_class("financial-reports") }}><a href="{{ env_url('financial-reports') }}">finacial reports</a></li>
+                  <li {{ active_class("financial-reports") }}><a href="{{ env_url('financial-reports') }}">financial reports</a></li>
                 </div>
               </ul>
             </li>
@@ -70,11 +70,11 @@
                 </ul>
             </li>              
             <li {{ active_class("timeline") }}><a href="{{ env_url('timeline') }}">Timeline <span class="collapse-icon"></span></a></li>              
-            <li {{ active_class("support donate otherways wards-dinner") }}><a href="{{ env_url('support') }}">Support <span class="collapse-icon"></span></a>
+            <li {{ active_class("support donate other-ways-to-give wards-dinner") }}><a href="{{ env_url('support') }}">Support <span class="collapse-icon"></span></a>
                <ul>
                 <div class="container">
                   <li {{ active_class("{{ env_url('donate') }}") }}><a href="donate">donate</a></li>
-                  <li {{ active_class("{{ env_url('otherways') }}") }}><a href="{{ env_url('otherways') }}">other ways to give</a></li>
+                  <li {{ active_class("other-ways-to-give") }}><a href="{{ env_url('other-ways') }}">other ways to give</a></li>
                   <li {{ active_class("awards-dinner") }}><a href="{{ env_url('awards-dinner') }}">awards dinner</a></li>
                 </div>
               </ul>

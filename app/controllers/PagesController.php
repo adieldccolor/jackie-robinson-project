@@ -86,16 +86,25 @@ class PagesController extends App
 	{
 		return $this->page("apply");
 	}
+
+	function applyLive()
+	{
+		$varsApply = ["viewState" => "live"];
+		return $this->page("apply", true, $varsApply);
+	}
+
+	function applyAfter()
+	{
+		$varsApply = ["viewState" => "afterreview"];
+		return $this->page("apply", true, $varsApply);
+	}
+
+
 	
 	//Support page
 	function support()
 	{
 		return $this->page("support");
-	}
-	
-	function otherways()
-	{
-		return $this->page("otherways");
 	}
 
 	//Support page

@@ -1,27 +1,67 @@
-<div class="page internal-page">
+<div class="page internal-page apply-page">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8">
-				<h3 class="zero-top">Program Description</h3>
-				<p>
-					The Jackie Robinson Foundation provides a multi-faceted experience designed to not only address the financial needs of minority students who aspire to attend college but also to guide them through the process of higher education.
-				</p>
-				<p class="zero-bottom">
-					<a href="apply.programs" class="button-primary zero-center zero-bottom">Learn More</a>
-				</p>
+			<div class="col-sm-8 col-xs-7 col-xxs left_column">
+				<div class="wrapper">
+					<h3 class="zero-top">Program Description</h3>
+					<p>
+						The Jackie Robinson Foundation provides a multi-faceted experience designed to not only address the financial needs of minority students who aspire to attend college but also to guide them through the process of higher education.
+					</p>
+					<p class="zero-bottom">
+						<a href="apply.programs" class="button-primary zero-center zero-bottom">Learn More</a>
+					</p>
+				</div>
 			</div>
-			<div class="col-sm-4">
-				<div class="line-h hidden-xs line-left"></div>
-				<h4 class="zero-top">Become a JRF Scholar</h4>
-				<p class="bodytext2 apply-dates-heading">Application live:</p>
-				<h5 class="zero-top subheader">November 1, 2014</h5>
-				
-				<p class="bodytext2 apply-dates-heading">Application deadline:</p>
-				<h5 class="zero-top subheader">February 15, 2015</h5>
+			<div class="col-sm-4 col-xs-5 col-xxs right_column">
+				<div class="line-h hidden-480 line-left"></div>
+				<div class="line visible-480"></div>
+				<div class="wrapper">
 
-				<p>
-					<a href="#" class="link3 useIcon"><i class="icon pdfDocIcon"></i> <span>PREVIEW JRF APPLICATION</span></a>
-				</p>
+					@{{ $viewState = isset($viewState) ? $viewState : "apply"; }}@
+
+					<h4 class="zero-top">Become a JRF Scholar</h4>
+					
+					@{{ if($viewState == "apply"){ }}@
+					<p class="bodytext2 apply-dates-heading">Application deadline:</p>
+					<h5 class="zero-top subheader">February 15, 2015</h5>
+					<p>
+						<a class="sidebar-button" href="{{ env_url('apply.notlive') }}">Apply Now</a>
+					</p>
+					<p>
+						<a href="#" class="link3 useIcon"><i class="icon pdfDocIcon"></i> <span>PREVIEW JRF APPLICATION</span></a>
+					</p>
+					
+					@{{ }else if($viewState == "notlive"){ }}@
+					
+					
+					<p class="bodytext2 apply-dates-heading">Application Review:</p>
+					<h5 class="zero-top subheader">October 15, 2014</h5>
+					
+					<p class="bodytext2 apply-dates-heading">Application Live:</p>
+					<h5 class="zero-top subheader">November 1, 2014</h5>
+					
+
+					<p class="bodytext2 apply-dates-heading">Application deadline:</p>
+					<h5 class="zero-top subheader">February 15, 2015</h5>
+					<p>
+						<a href="#" class="link3 useIcon"><i class="icon pdfDocIcon"></i> <span>PREVIEW JRF APPLICATION</span></a>
+					</p>
+
+					@{{ }else if($viewState == "afterreview"){ }}@
+					
+					<p class="bodytext2 apply-dates-heading">Application Live:</p>
+					<h5 class="zero-top subheader">November 1, 2014</h5>
+
+					<p class="bodytext2 apply-dates-heading">Application Deadline:</p>
+					<h5 class="zero-top subheader">February 15, 2015</h5>
+
+					<p>
+						<a href="#" class="link3 useIcon"><i class="icon pdfDocIcon"></i> <span>PREVIEW JRF APPLICATION</span></a>
+					</p>
+
+					@{{ } }}@
+
+				</div>
 
 			</div>
 		</div>

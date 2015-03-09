@@ -108,6 +108,8 @@ h6, .h6
 		text-decoration: none
 		span
 			text-decoration: underline
+			max-width: 80%
+			max-width: calc(90% - 20px)
 
 
 .normal-list
@@ -137,12 +139,18 @@ h6, .h6
 
 	@media screen and (max-width: 980px)
 		margin-top: 0
+	@media screen and (max-width: 768px)
+		margin-bottom: 20px
 
 .sticky .btn-donate, .btn-donate, .menuTop.sticky #navbar ul.navbar-nav.navbar-right li a.btn-donate, .menuHidden.sticky #navbar ul.navbar-nav.navbar-right li a.btn-donate
 	padding-top: 0
 	padding-bottom: 0
 	height: 24px
 	line-height: 24px
+	@media screen and (min-width: 769px)
+		margin-top: 8px
+	@media screen and (max-width: 1270px)
+		margin-top: 1px
 
 
 .ellipsis
@@ -284,13 +292,17 @@ h6, .h6
 		background-color: #eeeeee
 		display: block
 		width: auto
-		height: 60px
-		line-height: 60px
+		height: 50px
+		line-height: 50px
 		margin-top: 28px
 		margin-left: -20px
 		margin-right: -20px
 		clear: both
 		border-color: #eeeeee
+		color: #666666
+
+		i
+			background-position: -503px -53px !important
 		&:before
 			display: block
 			content: ""
@@ -302,8 +314,6 @@ h6, .h6
 			margin-left: -14px
 			border: 14px solid transparent
 			border-bottom-color: #eeeeee
-		&:hover, &:focus, &.active
-			background-position: 50% -55px
 .icon-college
 	width: 2.25em
 	height: 1.9em
@@ -484,7 +494,7 @@ h6, .h6
 	// width: 1.916em
 	// vertical-align: middle
 	// background: url(../img/search-icon.png) 0 -3.166em no-repeat
-	margin-right: 18px
+	margin-right: 16px
 	padding-top: 8px
 	vertical-align: top
 	display: inline-block
@@ -618,17 +628,23 @@ h6, .h6
 			@media screen and (max-width: 992px)
 				padding: 235px 3em
 			@media screen and (max-width: 768px)
-				padding: 255px 3em
+				padding: 235px 2em
 			@media screen and (max-width: 767px)
 				padding-top: 35%
 			@media screen and (max-width: 700px)
-				padding-top: 34%
+				padding-top: 30%
 			@media screen and (max-width: 580px)
-				padding-top: 33%
+				padding-top: 28%
+				padding-left: 1em
+				padding-right: 1em
+				a
+					margin-right: 15px !important
 			@media screen and (max-width: 480px)
 				padding-top: 69%
 				padding-left: 2em
 				padding-right: 2em
+				a
+					margin-right: 23px
 			@media screen and (max-width: 425px)
 				padding-top: 63%
 			@media screen and (max-width: 360px)
@@ -699,7 +715,7 @@ h6, .h6
 					overflow: hidden
 				
 				&.medium-size
-					@media screen and (max-width: 992px) and (min-width: 769px)
+					@media screen and (max-width: 992px) and (min-width: 700px)
 						padding-top: 58px
 					@media screen and (max-width: 700px) and (min-width: 651px)
 						padding-top: 8%
