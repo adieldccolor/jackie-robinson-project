@@ -11,6 +11,26 @@
   // Use local alias
   var $ = jQuery;
 
+  // .lb-next
+
+  $("body").swipe( {
+      //Generic swipe handler for all directions
+      swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        // console.log("You swiped " + direction );  
+        if( $('#lightbox').length > 0 && $('#lightbox:visible').length > 0 ){
+          if( direction == "right" && $('#lightbox .lb-prev:visible').length > 0 ){
+            $('#lightbox .lb-prev:visible').trigger('click');
+          }
+
+          if( direction == "left" && $('#lightbox .lb-next:visible').length > 0 ){
+            $('#lightbox .lb-next:visible').trigger('click');
+          }
+
+
+        }
+      }
+    });
+
   var LightboxOptions = (function() {
     function LightboxOptions() {
       this.fadeDuration                = 500;
@@ -63,7 +83,7 @@
         shareButtons = $('body').find('#lightbox-share').html();
       }
 
-      $("<div id='lightboxOverlay' class='lightboxOverlay'></div><div id='lightbox' class='lightbox'><div class='lb-closeContainer'><a class='icon lb-close'></a></div><div class='lb-nav'><a class='lb-prev' href='' ><i class='icon arrowLeft'></i></a><a class='lb-next' href='' ><i class='icon arrowRight'></i></a></div><div class='lb-outerContainer'><div class='lb-container'><img class='lb-image' src='' /><div class='lb-loader'><a class='lb-cancel'></a></div></div></div><div class='lb-dataContainer'><div class='lb-data'><div class='lb-details'><span class='lb-caption'></span><span class='lb-number'></span><div class='lb-share'>"+shareButtons+"</div></div></div></div></div>").appendTo($('body'));
+      $("<div id='lightboxOverlay' class='lightboxOverlay'></div><div id='lightbox' class='lightbox'><div class='lb-closeContainer'><a class='icon lb-close'></a></div><div class='lb-outerContainer'><div class='lb-nav'><a class='lb-prev' href='' ><i class='icon arrowLeft'></i></a><a class='lb-next' href='' ><i class='icon arrowRight'></i></a></div><div class='lb-container'><img class='lb-image' src='' /><div class='lb-loader'><a class='lb-cancel'></a></div></div></div><div class='lb-dataContainer'><div class='lb-data'><div class='lb-details'><span class='lb-caption'></span><span class='lb-number'></span><div class='lb-share'>"+shareButtons+"</div></div></div></div></div>").appendTo($('body'));
       
       // Cache jQuery objects
       this.$lightbox       = $('#lightbox');
@@ -214,7 +234,7 @@
           // Fit image inside the viewport.
           // Take into account the border around the image and an additional 10px gutter on each side.
 
-          windowWidth    = $(window).width();
+          windowWidth    = $(window).width() > 768 ? $(window).width() - ( 85 * 2 ) : $(window).width();
           windowHeight   = $(window).height();
           maxImageWidth  = windowWidth - self.containerLeftPadding - self.containerRightPadding - 20;
           maxImageHeight = windowHeight - self.containerTopPadding - self.containerBottomPadding - 120;

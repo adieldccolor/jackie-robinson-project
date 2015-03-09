@@ -59,7 +59,7 @@
 	.logo
 		font-size: 12px
 		height: 100%
-		padding: 7px 0
+		padding: 15px 0
 		background-repeat: no-repeat
 		margin-left: 50px
 		margin-right: 43px
@@ -76,7 +76,7 @@
 			width: 120px
 			margin-top: 25px
 		@media screen and (max-width: 768px)
-			padding: 0
+			padding: 7px 0
 			width: 85px
 			margin: 0px 0px 0px 45px
 			-webkit-transition: all 0s
@@ -84,6 +84,8 @@
 			-ms-transition: all 0s
 			-o-transition: all 0s
 			transition: all 0s
+		@media screen and (max-width: 480px)
+			margin-left: 27px
 		img
 			width: 100%
 			-webkit-transition: all 0.4s
@@ -139,6 +141,8 @@
 			line-height: 60px
 			margin-right: 45px
 			display: block
+			@media screen and (max-width: 480px)
+				margin-right: 27px
 	#navbar
 		background-color: transparent
 		font-size: 1em
@@ -424,11 +428,13 @@
 			@media screen and (min-width: 769px)
 				width: 92px
 				margin-top: 0px
-				padding: 0
-			@media screen and (max-width: 992px)
+				padding: 7px 0 0
+			@media screen and (max-width: 1270px)
 				margin-top: 0
+				padding-top: 20px
 			@media screen and (max-width: 768px)
 				margin-top: 0px
+				padding-top: 7px
 		.row
 			#navbar
 				margin-top: 0 !important
