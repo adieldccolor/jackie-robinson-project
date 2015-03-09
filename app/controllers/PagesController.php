@@ -86,36 +86,40 @@ class PagesController extends App
 	{
 		return $this->page("apply");
 	}
+<<<<<<< HEAD
 
 	function applyNotLive()
 	{
 		$varsApply = ["viewState" => "notlive"];
 		return $this->page("apply", true, $varsApply);
-	}
-
-	function applyAfter()
-	{
-		$varsApply = ["viewState" => "afterreview"];
-		return $this->page("apply", true, $varsApply);
-	}
-
-
+=======
 	
 	//Support page
 	function support()
 	{
 		return $this->page("support");
-	}
-
-	//Support page
-	function mediakit()
-	{
-		return $this->page("media_kit", false);
+>>>>>>> origin/master
 	}
 	
 	function donate()
 	{
 		return $this->page("donate", false);
+	}
+	
+	function otherways()
+	{
+		return $this->page("otherways", false);
+	}
+	
+	function awardsDinner()
+	{
+		return $this->page("annual awards dinner");
+	}
+	
+	//Support page
+	function mediakit()
+	{
+		return $this->page("media_kit", false);
 	}
 
 
@@ -189,9 +193,9 @@ class PagesController extends App
 		return $this->page("news",false);
 	}
 	
-	function press()
+	function release()
 	{
-		return $this->page("press",false);
+		return $this->page("release",false);
 	}
 
 			function press_post()
