@@ -18,8 +18,6 @@ Route::controller('support-network', 'PagesController@supportNetwork');
 
 //apply pages
 Route::controller('apply', 'PagesController@apply');
-Route::controller('apply.notlive', 'PagesController@applyNotLive');
-Route::controller('apply.after', 'PagesController@applyAfter');
 
 
 //apply pages
@@ -28,12 +26,14 @@ Route::controller('timeline', 'PagesController@timeline');
 //Support pages
 Route::controller('support', 'PagesController@support');
 Route::controller('donate', 'PagesController@donate');
+Route::controller('otherways', 'PagesController@otherways');
+Route::controller('annual-awards-dinner', 'PagesController@awardsDinner');
 Route::controller('faqs', 'PagesController@faqs');
 Route::controller('news', 'PagesController@news');
 Route::controller('terms', 'PagesController@terms');
 Route::controller('media-kit', 'PagesController@mediakit');
 Route::controller('sitemap', 'PagesController@sitemap');
-Route::controller('press', 'PagesController@press');
+Route::controller('release', 'PagesController@release');
 Route::controller('press_post', 'PagesController@press_post');
 
 //apply pages
